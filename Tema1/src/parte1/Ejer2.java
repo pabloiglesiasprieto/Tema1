@@ -14,7 +14,8 @@ public class Ejer2 {
 		// Inicializamos la variable.
 		edad = input.nextInt();
 		// Imprimimos el resultado en consola.
-		System.out.println("Tu edad es " + edad);
+		System.out.println("Tu edad el próximo año será de " + (edad+1));
+		// Cerramos el Scanner
 		input.close();
 	}
 }
