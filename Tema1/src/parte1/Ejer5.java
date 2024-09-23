@@ -1,5 +1,7 @@
 package parte1;
 
+import java.util.Scanner;
+
 public class Ejer5 {
 	public static void main(String[] args) {
 		/* Diseñar una aplicación que calcule la longitud y el área de una
@@ -13,6 +15,15 @@ public class Ejer5 {
 		double radio;
 		// Pedimos al usuario que introduzca el radio.
 		System.out.println("Introduce el radio de la circunferencia");
+		// El usuario introduce el tamaño del radio.
+		radio = input.nextDouble();
+		// Imprimimos en consola la longitud y área de la circunferencia.
+		System.out.println("La longitud de la circunferencia es de " + 2*Math.PI*radio);
+		System.out.println("El área de la circunferencia es de " + Math.PI*(radio*radio));
+		// Cerramos el escáner.
+		input.close();
+		
+	
 		
 		
 
