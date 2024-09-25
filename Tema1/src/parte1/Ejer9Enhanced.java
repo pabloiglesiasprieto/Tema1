@@ -24,6 +24,7 @@ public class Ejer9Enhanced {
 			// Ejecución si la condición no se cumple
 			System.out.println("Eres mayor de edad");
 		}
+		// Cerramos el Scanner.
 		input.close();
 	}
 }
