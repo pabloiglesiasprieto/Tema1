@@ -17,16 +17,15 @@ public class Ejer5 {
 		System.out.println("¿Cuántos segundos quieres convertir?");
 		// Leemos entrada de teclado.
 		tiempoSegundos = input.nextInt();
-		double horas = (tiempoSegundos / 3600);
-		if (horas<0) {
-			double minutos = horas * 60;
-		} else {
-			double minutos = 0; 	
-		double minutosCasteados = (int) minutos;
-		double segundos = (minutos - minutosCasteados);
-		System.out.println(
-				"El tiempo es de :" + (int) horas + " horas, " + (int) minutosCasteados + " minutos," + " y " + (int) (segundos*100) + " segundos.");
+		// Calculamos las horas,
+		double horas = tiempoSegundos / 3600;
+		// Calculamos los minutos.
+		double minutos = tiempoSegundos % 3600 / 60;
+		// Calculamos los segundos
+		double segundos = minutos % 60;
+		// Imprimimos el resultado
+		System.out.println((int) horas + " horas, " + (int) minutos + " minutos y " + (int) segundos + " segundos");
+		// Cerramos el Scanner.
 		input.close();
 	}
-}
 }
