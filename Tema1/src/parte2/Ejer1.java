@@ -10,6 +10,15 @@ public class Ejer1 {
 		 */
 		// Declaramos variable.
 		double numero;
-		
+		// Creamos un Scanner.
+		Scanner input = new Scanner(System.in);
+		// Preguntamos el número.
+		System.out.println("Introduce el número");
+		// Leemos entrada de teclado.
+		numero = input.nextDouble();
+		// Imprimimos la respuesta.
+		System.out.println("El número redondeado es de " + ((int) (0.5 + numero)));
+		// Cerramos el Scanner.
+		input.close();
 	}
 }
