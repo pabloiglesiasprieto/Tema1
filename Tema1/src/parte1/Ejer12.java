@@ -14,8 +14,8 @@ public class Ejer12 {
 		// Declaramos las variables.
 		int peras;
 		int manzanas;
-		double perasPrecio = 1.95;
-		double manzanasPrecio = 2.35;
+		final double PERAS_PRECIO = 1.95;
+		final double MANZANAS_PRECIO = 2.35;
 		// Creamos Scanner
 		Scanner input = new Scanner(System.in);
 		// Preguntamos cantidad de peras.
@@ -26,8 +26,8 @@ public class Ejer12 {
 		System.out.println("¿Cuántos kilos de manzana has vendido?");
 		manzanas = input.nextInt();
 		// Imprimimos el resultado
-		System.out.println("Has obtenido " + (peras * perasPrecio) + "€ de las peras");
-		System.out.println("Has obtenido " + (manzanas * manzanasPrecio) + "€ de las manzanas");
+		System.out.println("Has obtenido " + (peras * PERAS_PRECIO) + "€ de las peras");
+		System.out.println("Has obtenido " + (manzanas * MANZANAS_PRECIO) + "€ de las manzanas");
 		// Cerramos el Scanner.
 		input.close();
 	}
