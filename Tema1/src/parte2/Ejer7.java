@@ -35,7 +35,9 @@ public class Ejer7 {
 		 * Imprimimos el resultado con un ternario que dicta si se cumple la condición y
 		 * se aplicará un descuento o si el precio será el base.
 		 */
-		System.out.println("El precio total es de: " + (precioTotal > 100 ? ("(con descuento) " + (precioTotal - descuento) + "€") : ("(sin descuento) " + precioTotal + "€")));
+		System.out.println(
+				"El precio total es de: " + (precioTotal > 100 ? ("(con descuento) " + (precioTotal - descuento) + "€")
+						: ("(sin descuento) " + precioTotal + "€")));
 		// Cerramos el Scanner.
 		sc.close();
 	}
