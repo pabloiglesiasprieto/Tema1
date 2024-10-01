@@ -31,6 +31,10 @@ public class Ejer7 {
 		double precioTotal = ((entrada1 * PRECIO_ENTRADA1) + (entrada2 * PRECIO_ENTRADA2));
 		// Calculamos el descuento
 		double descuento = (precioTotal * 0.05);
+		/*
+		 * Imprimimos el resultado con un ternario que dicta si se cumple la condición y
+		 * se aplicará un descuento o si el precio será el base.
+		 */
 		System.out.println("El precio total es de: " + (precioTotal > 100 ? ("(con descuento) " + (precioTotal - descuento) + "€") : ("(sin descuento) " + precioTotal + "€")));
 		// Cerramos el Scanner.
 		sc.close();
