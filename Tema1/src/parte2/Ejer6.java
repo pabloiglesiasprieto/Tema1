@@ -14,6 +14,7 @@ public class Ejer6 {
 		double milimetros;
 		double centimetros;
 		double metros;
+		double distanciaTotal;
 		// Creamos un Scanner.
 		Scanner sc = new Scanner(System.in);
 		// Preguntamos los milimetros.
@@ -29,7 +30,7 @@ public class Ejer6 {
 		// Leemos lectura de teclado.
 		metros = sc.nextDouble();
 		// Calculamos la distancia total.
-		double distanciaTotal = (metros * 100) + centimetros + (milimetros / 10);
+		distanciaTotal = (metros * 100) + centimetros + (milimetros / 10);
 		// Imprimimos el resultado.
 		System.out.println("La distancia total es de: " + distanciaTotal + " centimetros.");
 		// Cerramos el Scanner.
